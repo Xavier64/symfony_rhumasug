@@ -1,0 +1,195 @@
+.mainprofil {
+  display: flex;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
+/*  -----------Partie Profil-------- */
+/* -----------Partie Gauche ------------- */
+.profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  color: white;
+}
+
+.profil > span {
+  color: #AF956E;
+  font-size: 3vw;
+}
+
+.profil > form {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+
+.profil > form > input {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  border-bottom: #AF956E solid 4px;
+  color: white;
+}
+
+.profil div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 8vw;
+  width: 25vw;
+}
+
+.change {
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 0.4vw;
+  height: 3vw;
+  width: 10vw;
+  color: white;
+  background: #AF956E;
+  border-radius: 25px;
+  font-size: 0.8vw;
+  font-family: "Alegreya", serif;
+}
+
+.profil p {
+  font-size: 1.5vw;
+}
+
+/* ----------- Partie Droite--------- */
+.historique {
+  color: #AF956E;
+  font-size: 3vw;
+}
+
+/* -----------Fin Profil----------- */
+/* ----------------Debut Panier---------- */
+.panier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panier > h1 {
+  color: #ffffff;
+}
+
+.panier > p {
+  color: #ffffff;
+}
+
+/* ----------------DEBUT LOGIN INSCRIPTION------------- */
+.login {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
+.backwhite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1vw;
+  height: 40vw;
+  width: 40vw;
+}
+
+.backwhite > input {
+  gap: 0.3vw;
+  width: 13vw;
+  height: 2vw;
+}
+
+.backwhite div {
+  width: 20vw;
+  height: 13vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backwhite h4 {
+  font-size: 2vw;
+}
+
+.backwhite span {
+  font-size: 2.5vw;
+}
+
+.loginbtn {
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 0.4vw;
+  height: 3vw;
+  width: 10vw;
+  color: white;
+  background: #AF956E;
+  border-radius: 25px;
+  font-size: 0.8vw;
+  font-family: "Alegreya", serif;
+}
+
+/* -------------FIN LOGIN INSCRIPTION----------- */
+/* --------------DEBUT VALIDATION LOGIN----------- */
+.data_article {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vw;
+  font-size: 2vw;
+  color: white;
+}
+
+.data_section {
+  display: flex;
+  flex-direction: column;
+  background-color: #9d8762;
+  height: 30vw;
+}
+
+.data_section > a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+/* -----------Page merci.php------- */
+.merci {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.merci > div {
+  z-index: 1;
+  width: 20vw;
+  height: 20vw;
+}/*# sourceMappingURL=restmain.css.map */

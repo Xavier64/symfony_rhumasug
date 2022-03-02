@@ -1,0 +1,444 @@
+@charset "UTF-8";
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Alegreya", serif;
+  box-sizing: border-box;
+}
+
+/* --------Partie logo------------ */
+.part1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25vw;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > img {
+  width: 7vw;
+  height: 7vw;
+}
+
+.logo > div {
+  font-family: "Almendra SC", serif;
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+
+.logosug {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.maj {
+  font-size: 3vw;
+  color: #AF956E;
+}
+
+.logo:nth-child(4) {
+  gap: 2vw;
+}
+
+.part1 > :nth-child(2) {
+  font-size: 1vw;
+  font-family: "Alegreya", serif;
+  letter-spacing: 0.4vw;
+}
+
+.lien {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  width: 9vw;
+}
+
+.lien img {
+  width: 3vw;
+  height: 3vw;
+  color: #AF956E;
+}
+
+.iconConnect {
+  display: flex;
+}
+
+.deconnexion {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  width: 9vw;
+  visibility: hidden;
+}
+
+.deconnexion img {
+  width: 3vw;
+  height: 3vw;
+  color: #AF956E;
+}
+
+/* -------------Partie Nav---------- */
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 4vw;
+  background-color: black;
+}
+
+nav > ul {
+  display: flex;
+  color: white;
+  align-self: center;
+  gap: 8vw;
+  list-style: none;
+}
+
+nav > ul > li > a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  font-size: 1vw;
+  font-weight: bolder;
+  letter-spacing: 0.4vw;
+  line-height: 19px;
+}
+
+nav > ul > li > img {
+  align-items: flex-end;
+}
+
+/* ---------Fin de la première page ---------  */
+.end_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+  color: white;
+  font-size: 4vw;
+}
+
+.end_header > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Artifika", serif;
+  gap: 2vw;
+  letter-spacing: 1vw;
+}
+
+.end_header > div > span:nth-child(2) {
+  font-size: 5vw;
+}
+
+.end_header > div > span:nth-child(4) {
+  font-size: 7vw;
+}
+
+.end_header > div > div {
+  border-bottom: solid white 5px;
+  width: 8vw;
+  height: 2vw;
+}
+
+.connect {
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 0.4vw;
+  height: 3vw;
+  width: 14vw;
+  color: white;
+  background: #AF956E;
+  border-radius: 25px;
+  font-size: 0.8vw;
+  font-family: "Alegreya", serif;
+}
+
+/* -------- MAIN PAGE --------- */
+/* --------Première partie------- */
+.starproduits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+.starproduits > div:nth-child(1) {
+  height: 5vw;
+}
+
+.border {
+  width: 20vw;
+  border-bottom: #AF956E solid 3px;
+}
+
+.starproduits span {
+  font-size: 4vw;
+  width: 50vw;
+  color: #AF956E;
+}
+
+.palmier {
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+}
+
+.palmier img {
+  z-index: 0;
+  width: 8vw;
+  height: 8vw;
+}
+
+.palmier img:nth-child(1) {
+  width: 8vw;
+  height: 8vw;
+  transform: rotateY(180deg);
+}
+
+.rectproduit {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  height: 50vw;
+}
+
+.rect50 > div > p {
+  text-align: center;
+}
+
+.rect50 > div > img {
+  transform-origin: center;
+  width: 40vw;
+  height: 40vw;
+}
+
+.recttext {
+  font-size: 1.5vw;
+  width: 20vw;
+  text-align: center;
+  letter-spacing: 0.4vw;
+}
+
+.rect {
+  width: 12vw;
+  height: 12vw;
+}
+
+.bottle > img {
+  width: 17vw;
+  height: 17vw;
+}
+
+/*---------- Fin premiere partie du main--------- */
+/* ---------- Deuxième partie du main------------- */
+.mainpartie2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vw;
+}
+
+.article1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  text-align: center;
+  width: 90vw;
+}
+
+#firstlign {
+  display: flex;
+  justify-content: space-around;
+  height: 20vw;
+  width: 90vw;
+}
+
+.produits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.produits img {
+  width: 10vw;
+  height: 10vw;
+}
+
+.produits p {
+  width: 10vw;
+  font-size: 1vw;
+}
+
+.secondlign {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btnAchat {
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 0.4vw;
+  height: 3vw;
+  width: 12vw;
+  color: white;
+  background: #AF956E;
+  border-radius: 25px;
+  font-size: 0.8vw;
+  font-family: "Alegreya", serif;
+}
+
+/* ------------Fin deuxième partie----------- */
+/* ------------- Troisème partie ------------ */
+.mainpartie3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+  color: white;
+}
+
+.who {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10vw;
+}
+
+.mainpartie3 > div > span {
+  font-size: 3.5vw;
+  color: #AF956E;
+}
+
+.squaretext {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.square1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 53px;
+  width: 57vw;
+  height: 33vw;
+}
+
+.square2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgba(196, 196, 196, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+  margin-right: 30px;
+  width: 50vw;
+  height: 26vw;
+}
+
+.divimg {
+  background: url(../img/notrehistoire.jpg);
+  margin-right: 30px;
+  margin-top: 40px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 26px;
+  height: 16vw;
+  width: 39vw;
+}
+
+.lasttext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.smallborder {
+  border-top: solid 5px #AF956E;
+  width: 4vw;
+}
+
+.lasttext > p {
+  width: 20vw;
+  text-align: center;
+  font-size: 1.3vw;
+}
+
+/* -------------- Footer ----------------- */
+/* ----------Premiere partie du footer----- */
+.blackpart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+  letter-spacing: 0.4vw;
+}
+
+.blackpart > div:nth-child(2) {
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.blackpart > div:nth-child(2) > img {
+  color: #AF956E;
+  width: 3vw;
+  height: 3vw;
+}
+
+/* -------------Deuxième partie du footer------- */
+footer > div {
+  height: 5vw;
+}
+
+.whitepart {
+  font-family: "Alegreya", serif;
+  text-align: center;
+  letter-spacing: 0.2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.whitepart > span {
+  font-weight: bolder;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
