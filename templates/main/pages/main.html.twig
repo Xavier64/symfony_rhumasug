@@ -1,5 +1,6 @@
 {% extends 'base.html.twig' %}
-
+{% block body %}
+{% block section %}
 <section class="end_header">
     <div>
         <span>LE RHUM</span>
@@ -9,6 +10,9 @@
         <button class="connect">S'INSCRIRE</button>
     </div>
 </section>
+{% endblock %}
+
+{% block main %}
 <main class="mainhome">
     <!-- Premiere partie du main  -->
     <section class="starproduits">
@@ -16,18 +20,18 @@
         <div class="border"></div>
         <span>LA STAR DE <b>NOS PRODUITS</b></span>
         <div class="border"></div>
-        <div class="palmier"><img src="./assets/img/palmier.jpg" alt=""><img src="./assets/img/palmier.jpg" alt=""></div>
+        <div class="palmier"><img src="img/palmier.jpg" alt=""><img src="img/palmier.jpg" alt=""></div>
     </section>
     <section class="rectproduit">
         <div class="rect50">
-            <div><img id="imgRotate" src="./assets/img/losange.png"></div>
+            <div><img id="imgRotate" src="img/losange.png"></div>
         </div>
         <div class="recttext">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe fuga distinctio accusamus, animi voluptate aperiam tempore iste amet, modi sit ducimus maxime quos soluta cupiditate quod quidem debitis. At, dicta!</p>
             <button class="btnAchat">ACHETEZ</button>
         </div>
         <div class="bottle">
-            <img src="./assets/img/bottle.png" alt="">
+            <img src="img/bottle.png" alt="">
         </div>
     </section>
     <section class="starproduits">
@@ -35,7 +39,7 @@
         <span id="nosproduits">NOS PRODUITS</span>
         <div class="border"></div>
         <div class="palmier"></div>
-        <div class="palmier"><img src="./assets/img/palmier.jpg" alt=""> <img src="./assets/img/palmier.jpg" alt=""></div>
+        <div class="palmier"><img src="img/palmier.jpg" alt=""> <img src="img/palmier.jpg" alt=""></div>
     </section>
     <!-- - Deuxième partie du main  -->
     <section class="mainpartie2">
@@ -52,7 +56,7 @@
         <span id="notrehistoire">NOTRE HISTOIRE</span>
         <div class="border"></div>
         <div class="palmier"></div>
-        <div class="palmier"><img src="./assets/img/palmier.jpg" alt=""> <img src="./assets/img/palmier.jpg" alt=""></div>
+        <div class="palmier"><img src="img/palmier.jpg" alt=""> <img src="img/palmier.jpg" alt=""></div>
     </section>
     <section class="mainpartie3">
         <div class="who">
@@ -75,3 +79,5 @@
     </section>
     <div></div>
 </main>
+{% endblock main %}
+ {% endblock body %}
