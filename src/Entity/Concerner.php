@@ -10,10 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: ConcernerRepository::class)]
 class Concerner
 {
-    #[ORM\Id]
-    #[ORM\GeneratedValue]
-    #[ORM\Column(type: 'integer')]
-    private $id;
+   
 
     #[ORM\Column(type: 'integer')]
     private $quantite;
@@ -21,9 +18,12 @@ class Concerner
     #[ORM\Column(type: 'decimal', precision: 10, scale: 2)]
     private $prixVenteProduit;
 
-    #[ORM\ManyToMany(targetEntity: Produit::class)]
+    #[ORM\Id]
+    #[ORM\ManyToOne(targetEntity: Produit::class)]
+    #[ORM\JoinColumn(nullable: false)]
     private $produit;
-
+    
+    #[ORM\Id]
     #[ORM\ManyToOne(targetEntity: Vente::class)]
     #[ORM\JoinColumn(nullable: false)]
     private $vente;
@@ -33,10 +33,7 @@ class Concerner
         $this->produit = new ArrayCollection();
     }
 
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
+  
 
     public function getQuantite(): ?int
     {
