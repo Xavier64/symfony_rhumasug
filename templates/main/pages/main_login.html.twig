@@ -1,0 +1,28 @@
+{% block body %}
+<main class="login">
+    <form class = "backwhite" action="data/data_login.php" method="POST">
+        <h4>Bienvenue</h4>
+        <span>Inscrivez-vous!!</span>
+        <p>Nom:</p> 
+        <input type="text" name="nom" id="nom/" pattern="^[A-Za-z '-]+$" maxlength="20">
+        <p>Prénom:</p> 
+        <input type="text" name="prenom" id="prenom/"  pattern="^[A-Za-z '-]+$" maxlength="20">
+        <p>Adresse:</p>
+        <input type="text" name="adresse" id="adresse/">
+        <p>E-Mail:</p>
+        <input type="mail" name="email" id="email/">
+        <p>Nouveau Mot de passe</p>
+        <input type="password" name="password" id="password/" minlength="8" pattern="^[A-Za-z '-]+$" >
+       <div><button class="loginbtn">Inscription</button></div>
+    </form>
+    <form class = "backwhite" action="data/connexion.php" method="POST">
+        <h4>Déjà inscrit</h4>
+        <span>Connectez-vous!!</span>
+        <p>Nom:</p> 
+        <input type="text" name="nom" id="nom/" pattern="^[A-Za-z '-]+$" maxlength="20">
+        <p>Mot de Passe:</p> 
+        <input type="password" name="password" id="password/"  pattern="^[A-Za-z '-]+$" maxlength="20">
+       <div><button class="loginbtn">Connexion</button></div>
+    </form>
+</main>
+{% endblock %}
