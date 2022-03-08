@@ -3,6 +3,7 @@
 namespace App\DataFixtures;
 
 use App\Entity\Client;
+use App\Entity\Produit;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasher;
@@ -28,6 +29,14 @@ class AppFixtures extends Fixture
         $charles->setPrenomClient("Charles");
         $charles->setAdresseClient("25 rue du Beau");
         $manager->persist($charles);
+
+        $rhum1 = new Produit();
+        $rhum1->setNomProduit("Rhum Ambrée");
+        $rhum1->setPrixProduit("35");
+        $rhum1->setStockProduit(15);
+        $rhum1->setImg("bottle.png");
+        $rhum1->setDescription("lorem");
+
 
         $manager->flush();
     }

@@ -1,6 +1,5 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-{% block section %}
 <section class="end_header">
     <div>
         <span>LE RHUM</span>
@@ -10,8 +9,6 @@
         <button class="connect">S'INSCRIRE</button>
     </div>
 </section>
-{% endblock %}
-
 {% block main %}
 <main class="mainhome">
     <!-- Premiere partie du main  -->
@@ -42,12 +39,19 @@
         <div class="palmier"><img src="img/palmier.jpg" alt=""> <img src="img/palmier.jpg" alt=""></div>
     </section>
     <!-- - Deuxième partie du main  -->
+    {% block section %}
+    {# {% for produits in produit %}
+        <div>{{ produit.img }}</div>
+        <div>{{ produit.nomProduit }}</div>
+        <div>{{ produit.description }}</div>
+    {% endfor %} #}
     <section class="mainpartie2">
         <article class="article1">
             <div id="firstlign">
             </div>
         </article>
     </section>
+    {% endblock %}
     <!-- Fin Deuxième partie -->
 
     <!-- Troisème et dernière partie -->
